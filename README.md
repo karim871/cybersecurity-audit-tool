@@ -19,22 +19,22 @@ A Python-based security scanning tool featuring multi-threaded port scanning, ge
 ## 🖥️ Screenshots
 
 ### Command-Line Interface
-![Help Command](screenshots/01-help-command.png)
+![Help Command](../images/01-help-command.png)
 
 ### Port Scanning in Action
-![Localhost Scan](screenshots/02-localhost-scan.png)
+![Localhost Scan](../images/02-localhost-scan.png)
 
 ### Advanced Scanning
-![Advanced Scan](screenshots/03-advanced-scan.png)
+![Advanced Scan](../images/03-advanced-scan.png)
 
 ### JSON Report Generation
-![JSON Report](screenshots/04-json-report.png)
+![JSON Report](../images/04-json-report.png)
 
 ### Project Structure
-![Project Structure](screenshots/05-project-structure.png)
+![Project Structure](../images/05-project-structure.png)
 
 ### Generated Reports
-![Files Created](screenshots/06-Files-Created.png)
+![Files Created](../images/06-Files-Created.png)
 
 ## 🚀 Quick Start
 
