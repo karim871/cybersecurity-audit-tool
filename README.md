@@ -159,15 +159,15 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 🙏 Acknowledgments
 
 - Inspired by [Nmap](https://nmap.org/)
-- Built with Python's excellent networking libraries
-- Thanks to the cybersecurity community
+- Built with Python's networking libraries
+- For and thanks to the cybersecurity community
 
 ## 📬 Contact
 
 - **Author:** Abdelkrim Zouaki
 - **Portfolio:** [karim871.github.io](https://karim871.github.io/)
 - **Blog Post:** [Building a Cybersecurity Audit Tool](https://karim871.github.io/Portfolio/secondarypages/cybersecurity-audit-tool-blog.html)
-- **Certifications:** CompTIA CySA+ | Security+ | CCNA
+
 
 ---
 
