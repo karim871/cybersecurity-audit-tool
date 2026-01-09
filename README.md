@@ -33,11 +33,13 @@ A powerful, multi-threaded Python port scanner and security audit tool with comp
 ```bash
 # Clone the repository
 git clone https://github.com/karim871/cybersecurity-audit-tool.git
+# Navigate to the repository
 cd cybersecurity-audit-tool
 
 # Create virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
+#On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -45,15 +47,13 @@ pip install -r requirements.txt
 
 ### Basic Usage
 ```bash
-# Scan localhost (ALWAYS START HERE)
+# Scan localhost
 python src/main.py 127.0.0.1 -p 1-1000
 
 # Fast scan with progress bar
 python src/main.py 127.0.0.1 -p 1-1000 -w 500
-
 # Full scan with report
 python src/main.py 127.0.0.1 -p 1-65535 -o reports/full_scan.json -v
-
 # Scan specific ports
 python src/main.py 127.0.0.1 -p 22,80,443,3306,8080
 ```
@@ -81,10 +81,8 @@ python src/main.py 8.8.8.8 -p 1-100 --api-token YOUR_TOKEN
 ```bash
 # Run all tests
 python tests/test_suite.py
-
 # With pytest
 pytest tests/ -v
-
 # With coverage
 pytest tests/ --cov=src --cov-report=html
 ```
@@ -99,32 +97,8 @@ pytest tests/ --cov=src --cov-report=html
 
 ## ⚠️ Legal Notice
 
-**IMPORTANT:** This tool is for educational purposes and authorized security testing only.
-
-### Legal Use Cases:
-✅ Your own systems (localhost, personal VMs)
-✅ Authorized penetration testing engagements
-✅ Security research in controlled environments
-✅ Educational labs (HackTheBox, TryHackMe)
-✅ Explicitly authorized targets (e.g., scanme.nmap.org)
-
-### NEVER Use On:
-❌ Systems you don't own
-❌ Networks without written permission
-❌ Production systems without authorization
-❌ Any system where scanning is prohibited
-
+This tool is for educational purposes and authorized security testing only.
 Unauthorized scanning may be **illegal** and could result in criminal prosecution.
-
-## 🎓 Learning Path
-
-This tool is designed for cybersecurity students and professionals. Check out the [learning exercises](docs/exercises.md) for:
-
-- Week-by-week learning plans
-- Real-world scenarios
-- CTF-style challenges
-- Career development guidance
-- Certification preparation (Security+, CySA+, OSCP)
 
 ## 📝 What's New in v2.0
 ```python
