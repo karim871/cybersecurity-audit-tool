@@ -1,8 +1,8 @@
 🚀 Release v2.0: Major Enhancements and Refactoring
-🎯 Overview
+
+Overview: 
 This PR introduces v2.0 of the Security Audit Tool with significant improvements in performance, usability, code quality, and documentation.
-✨ What's New
-Core Enhancements
+✨ What's New / Core Enhancements
 
 ✅ Real-time progress bars using tqdm for better UX
 ✅ Professional multi-level logging system (DEBUG, INFO, WARNING, ERROR)
@@ -11,15 +11,9 @@ Core Enhancements
 ✅ Enhanced vulnerability detection with severity levels (LOW, MEDIUM, HIGH, CRITICAL)
 ✅ Improved error handling and timeout management
 
-Documentation
 
-✅ Complete CHANGELOG.md with version history
-✅ Updated README.md with comprehensive usage examples
-✅ Added learning exercises and career development guide
-✅ Created testing documentation
-
-Code Quality
-
+**_Code Quality
+**_
 ✅ Modular class-based design (PortScanner, VulnerabilityDetector, etc.)
 ✅ Proper separation of concerns
 ✅ Better naming conventions
@@ -58,8 +52,8 @@ Migration guide:
 bash# v1.0 usage
 python src/main.py <ip> <start_port> <end_port>
 
-# v2.0 usage
-python src/main.py <ip> -p <start>-<end> [options]
+**# v2.0 usage
+**python src/main.py <ip> -p <start>-<end> [options]
 🔗 Related Links
 
 Blog post: https://karim871.github.io/Portfolio/secondarypages/cybersecurity-audit-tool-blog.html
