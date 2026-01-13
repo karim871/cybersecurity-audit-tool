@@ -1,7 +1,7 @@
 ## 📸 Screenshots
 
 ### Tool Help & Usage
-![Help Menu](docs/screenshots/help.png)
+![Help Menu](help.png)
 *Comprehensive command-line options and usage examples*
 
 ### Scanning in Action
