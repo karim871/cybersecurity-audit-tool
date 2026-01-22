@@ -28,10 +28,6 @@
 ![Help Menu](docs/screenshots/help.png)
 *Comprehensive command-line options and usage examples*
 
-### Scanning in Action
-![Security Scan Progress](docs/screenshots/scanning.png)
-*Real-time progress tracking with concurrent port scanning*
-
 ### Vulnerability Detection
 ![Vulnerability Results](docs/screenshots/results.png)
 *Automatic identification of dangerous services and security issues*
