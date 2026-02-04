@@ -7,3 +7,4 @@ reports/*.json
 *.log
 .DS_Store
 
+data/cve_cache/*.json

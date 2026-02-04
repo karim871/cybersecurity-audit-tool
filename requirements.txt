@@ -1,2 +1,10 @@
-requests==2.31.0
-tqdm==4.66.1
+# Core dependencies
+requests>=2.31.0
+tqdm>=4.66.1
+
+# Testing dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Optional: Better terminal output
+colorama>=0.4.6
