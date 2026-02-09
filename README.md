@@ -27,6 +27,27 @@
 ### Tool Help & Usage
 ![Help Menu](docs/screenshots/help.png)
 *Comprehensive command-line options and usage examples*
+## 🛠️ Command Line Options
+
+```
+usage: main.py [-h] [-p PORTS] [-t TIMEOUT] [-w WORKERS] [-v] [-o OUTPUT]
+               [--api-token API_TOKEN]
+               target
+
+positional arguments:
+  target                Target IP address or hostname
+
+options:
+  -h, --help            Show this help message and exit
+  -p, --ports PORTS     Port range to scan (default: 1-1000)
+                        Examples: 1-1000, 22,80,443, 1-100,8000-9000
+  -t, --timeout TIMEOUT Connection timeout in seconds (default: 1.0)
+  -w, --workers WORKERS Number of concurrent workers (default: 100)
+  -v, --verbose         Enable verbose output with detailed logging
+  -o, --output OUTPUT   Save results to JSON report file
+  --api-token TOKEN     IPinfo.io API token for geolocation data
+```
+
 
 ### Vulnerability Detection
 ![Vulnerability Results](docs/screenshots/results.png)
@@ -56,14 +77,14 @@
 git clone https://github.com/karim871/cybersecurity-audit-tool.git
 cd cybersecurity-audit-tool
 
-# Create virtual environment
+# Create a virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Verify installation
+# to verify the installation
 python src/main.py --help
 ```
 
@@ -89,20 +110,20 @@ python src/main.py 127.0.0.1 -p 1-65535 -o reports/full_scan.json
 
 ### Scan Specific Ports
 ```bash
-# Check web and database ports
+# To Check web and database ports
 python src/main.py 127.0.0.1 -p 80,443,3306,5432,27017 -v
 ```
 
 ### Quick Security Audit
 ```bash
-# Scan common vulnerable services
+# To Scan common vulnerable services
 python src/main.py 127.0.0.1 -p 21,22,23,25,445,3389 -v
 ```
 
 ### Full Network Scan
 ```bash
-# Comprehensive scan with report (takes ~2-3 minutes)
-python src/main.py 127.0.0.1 -p 1-65535 -w 500 -o reports/full_audit.json
+# Comprehensive scan with report 
+python src/main.py 127.0.0.1 -p 1-65535 -w 500 -o reports/full_scan.json
 ```
 
 ### Custom Timeout
@@ -110,18 +131,6 @@ python src/main.py 127.0.0.1 -p 1-65535 -w 500 -o reports/full_audit.json
 # Slower, more accurate scan for unstable networks
 python src/main.py 192.168.1.1 -p 1-1000 -t 2.0 -v
 ```
-
----
-
-## 📊 Performance
-
-Benchmarked on Kali Linux 2024.1 (Intel i7, 16GB RAM)
-
-| Port Range | Time (v1.0) | Time (v2.0) | Improvement |
-|------------|-------------|-------------|-------------|
-| 100 ports  | 5.2s        | 0.8s        | **6.5x faster** ⚡ |
-| 1,000 ports | 45s        | 8s          | **5.6x faster** ⚡ |
-| 10,000 ports | 8m        | 1.2m        | **6.7x faster** ⚡ |
 
 ### Key Improvements
 - ✅ 44% memory reduction (80MB → 45MB)
@@ -138,7 +147,7 @@ The project includes comprehensive test coverage:
 # Run all tests
 python tests/test_suite.py
 
-# Run with pytest (if installed)
+# To Run with pytest (needs to be installed)
 pytest tests/ -v
 
 # Run with coverage report
@@ -176,47 +185,6 @@ This tool is for **educational purposes** and **authorized security testing only
 
 ---
 
-## 🛠️ Command Line Options
-
-```
-usage: main.py [-h] [-p PORTS] [-t TIMEOUT] [-w WORKERS] [-v] [-o OUTPUT]
-               [--api-token API_TOKEN]
-               target
-
-positional arguments:
-  target                Target IP address or hostname
-
-options:
-  -h, --help            Show this help message and exit
-  -p, --ports PORTS     Port range to scan (default: 1-1000)
-                        Examples: 1-1000, 22,80,443, 1-100,8000-9000
-  -t, --timeout TIMEOUT Connection timeout in seconds (default: 1.0)
-  -w, --workers WORKERS Number of concurrent workers (default: 100)
-  -v, --verbose         Enable verbose output with detailed logging
-  -o, --output OUTPUT   Save results to JSON report file
-  --api-token TOKEN     IPinfo.io API token for geolocation data
-```
-
----
-
-## 📁 Project Structure
-
-```
-cybersecurity-audit-tool/
-├── src/
-│   └── main.py              # Main application code
-├── tests/
-│   └── test_suite.py        # Comprehensive test suite
-├── docs/
-│   └── screenshots/         # Demo screenshots
-├── reports/                 # Scan output directory
-├── requirements.txt         # Python dependencies
-├── CHANGELOG.md            # Version history
-├── LICENSE                 # MIT License
-└── README.md               # This file
-```
-
----
 
 ## 🔧 Technical Details
 
@@ -238,7 +206,7 @@ cybersecurity-audit-tool/
 The tool includes detection for:
 - Unencrypted protocols (FTP, Telnet, HTTP)
 - Exposed databases (MySQL, PostgreSQL, MongoDB, Redis)
-- Remote access services (RDP, VNC, SSH with old versions)
+- Remote access services (ssh , RDP, VNC,  with old versions)
 - Known vulnerable configurations and outdated software
 
 ---
@@ -258,35 +226,8 @@ The tool includes detection for:
 - **44% less memory** (80MB → 45MB)
 - **67% fewer false positives** (15% → 5%)
 
-### Breaking Changes
-
-**Old (v1.0):**
-```bash
-python main.py 127.0.0.1 1 1000
-```
-
-**New (v2.0):**
-```bash
-python src/main.py 127.0.0.1 -p 1-1000
-```
 
 See [CHANGELOG.md](CHANGELOG.md) for full details.
-
----
-
-## 🗺️ Roadmap
-
-### v2.1 (Planned)
-- [ ] UDP scanning support
-- [ ] SYN stealth scanning
-- [ ] HTML report generation
-- [ ] Multi-target scanning
-
-### v3.0 (Future)
-- [ ] CVE database integration
-- [ ] Plugin system for custom checks
-- [ ] Continuous monitoring mode
-- [ ] Web dashboard interface
 
 ---
 
