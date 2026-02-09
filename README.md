@@ -1,4 +1,4 @@
-# 🔒 Cybersecurity Audit Tool v2.0
+# 🔒 A Cybersecurity Audit Tool v2.0
 
 > A high-performance, multi-threaded network security scanner with real-time vulnerability detection and professional reporting capabilities.
 
