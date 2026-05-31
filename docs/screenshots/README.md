@@ -1,21 +1,21 @@
-## 📸 Screenshots
-
-### Tool Help & Usage
-![Help Menu](help.png)
-*Comprehensive command-line options and usage examples*
+## Screenshots
 
 ### Scanning in Action
-![Security Scan Progress](scanning.png)
-*Real-time progress tracking with concurrent port scanning*
+![Live Scan](cve-intelligence-output3.png)
+*Multi-threaded port scan running in real time — 1,000 ports, concurrent workers, live progress*
 
-### Vulnerability Detection
-![Vulnerability Results](results.png)
-*Automatic identification of dangerous services and security issues*
+### AI Security Assessment
+![AI Assessment](cve-intelligence-output.png)
+*AI-generated risk summary written to `reports/ai_assessment.txt` — overall risk level, top concerns, recommended actions*
 
-### Scan Summary
-![Performance Summary](Summarize.png)
-*Comprehensive scan results with timing and vulnerability counts*
+### CVE Risk Analysis
+![CVE Risk Report](cve-intelligence-output2.png)
+*Medium-severity CVE flagged with affected service, version, and remediation context*
 
-### JSON Report Output
-![JSON Report](niceformatting.png)
-*Professional JSON reports for documentation and analysis*
+### JSON Report with CVE Enrichment
+![JSON Report](json-report-cve-enriched.png)
+*Structured JSON export with NVD CVE data inline — CVSS scores, descriptions, affected versions*
+
+### CLI Options
+![CLI Help](help-with-cve-options.png)
+*Full command-line reference — port ranges, workers, timeout, CVE toggle, API token, output path*

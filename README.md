@@ -4,6 +4,8 @@ A multi-threaded network security scanner built in Python. Scans 1,000 ports in 
 
 **[Read the full build writeup →](https://karim871.github.io/Portfolio/secondarypages/cybersecurity-audit-tool-blog.html)**
 
+![Live Scan](docs/screenshots/cve-intelligence-output3.png)
+
 ---
 
 ## Features
@@ -12,10 +14,29 @@ A multi-threaded network security scanner built in Python. Scans 1,000 ports in 
 - Service fingerprinting via TCP banner grabbing
 - Severity-rated vulnerability detection (LOW / MEDIUM / HIGH / CRITICAL)
 - Real-time CVE lookups from NVD API v2.0 with 7-day TTL cache
+- AI-generated security assessment report
 - Geolocation context via IPinfo.io
 - Structured JSON report export
 - Real-time progress bars (`tqdm`)
 - 20+ unit and integration tests, ~85% code coverage
+
+## Screenshots
+
+**CVE intelligence output — risk level, affected service, remediation context:**
+
+![CVE Risk Report](docs/screenshots/cve-intelligence-output2.png)
+
+**AI-generated security assessment written to `reports/ai_assessment.txt`:**
+
+![AI Assessment](docs/screenshots/cve-intelligence-output.png)
+
+**JSON report with full NVD CVE enrichment:**
+
+![JSON Report](docs/screenshots/json-report-cve-enriched.png)
+
+**CLI options:**
+
+![CLI Help](docs/screenshots/help-with-cve-options.png)
 
 ## Quick Start
 
